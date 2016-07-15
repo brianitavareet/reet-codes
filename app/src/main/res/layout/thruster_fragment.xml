@@ -192,6 +192,7 @@
         android:layout_height="50dp"
         android:textStyle="normal"
         android:text="HALF" />
+
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/stern_full_green"
         android:layout_width="0dp"
