@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ship3">
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/ship3">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimaryText"
@@ -36,7 +40,8 @@
                 android:textColorHint="#31383e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp">
 
 
@@ -46,9 +51,9 @@
                     android:textColorHint="#31383e"
                     android:id="@+id/login_email"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress" />
+                    android:layout_height="45dp"
+                    android:hint="Username"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -56,7 +61,7 @@
                 android:textColorHint="#31383e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
                 android:layout_marginBottom="8dp">
 
                 <EditText android:textSize="20dp"
@@ -64,7 +69,7 @@
                     android:textColorHint="#31383e"
                     android:id="@+id/login_password"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="45dp"
                     android:hint="Password"
                     android:inputType="textPassword" />
             </android.support.design.widget.TextInputLayout>
@@ -91,8 +96,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <TextView
-        android:textSize="22dp"
+    <android.support.v7.widget.AppCompatButton
+        android:textSize="20sp"
         android:textColor="@color/colorPrimaryText"
         android:id="@+id/link_signup"
         android:layout_width="0dp"
@@ -103,7 +108,8 @@
         android:layout_height="wrap_content"
         android:text="Sign up" />
 
-    <TextView android:textSize="22dp"
+    <android.support.v7.widget.AppCompatButton
+        android:textSize="20sp"
         android:textColor="@color/colorPrimaryText"
         android:id="@+id/link_forgotPassword"
         android:layout_width="0dp"
@@ -118,3 +124,4 @@
 
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

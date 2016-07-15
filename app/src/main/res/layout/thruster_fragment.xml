@@ -1,183 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/thruster1">
+    android:layout_marginLeft="2dp"
+     android:padding="5dp"
+    android:background="@android:color/black">
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="FULL"
-        android:id="@+id/bow_full"
-        android:background="@drawable/layout_rounded_buttons"
-        android:layout_marginTop="95dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="HALF"
-        android:layout_marginLeft="3dp"
-        android:id="@+id/bow_half"
-        android:background="@drawable/layout_rounded_buttons"
-        android:layout_alignTop="@+id/bow_full"
-        android:layout_toRightOf="@+id/bow_full"
-        android:layout_toEndOf="@+id/bow_full" />
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="STOP"
-        android:id="@+id/bow_stop"
-        android:layout_marginLeft="3dp"
-        android:background="@drawable/layout_rounded_yellow"
-        android:layout_alignTop="@+id/bow_half"
-        android:layout_toRightOf="@+id/bow_half"
-        android:layout_toEndOf="@+id/bow_half" />
-
-    <TextView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="BOW"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/textView2"
-        android:layout_marginRight="39dp"
-        android:layout_marginEnd="39dp"
-        android:layout_alignBottom="@+id/bow_full"
-        android:layout_alignRight="@+id/bow_full"
-        android:layout_alignEnd="@+id/bow_full" />
-
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="HALF"
-        android:layout_marginLeft="3dp"
-        android:id="@+id/bow_half_green"
-        android:background="@drawable/layout_rounded_green"
-        android:layout_alignTop="@+id/bow_stop"
-        android:layout_toRightOf="@+id/bow_stop"
-        android:layout_toEndOf="@+id/bow_stop" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="2dp"
-        android:text="FULL"
-        android:id="@+id/bow_full_green"
-        android:background="@drawable/layout_rounded_green"
-        android:layout_alignTop="@+id/bow_half_green"
-        android:layout_toRightOf="@+id/bow_half_green"
-        android:layout_toEndOf="@+id/bow_half_green" />
-
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="STOP"
-        android:id="@+id/motors_stop"
-        android:background="@drawable/layout_rounded_buttons"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="MOTORS"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/bow_stop"
-        android:layout_alignEnd="@+id/bow_stop" />
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="45dp"
-        android:layout_height="50dp"
-        android:text="START"
-        android:background="@drawable/layout_rounded_green"
-        android:id="@+id/motors_start"
-        android:layout_alignTop="@+id/motors_stop"
-        android:layout_toRightOf="@+id/bow_half_green"
-        android:layout_toEndOf="@+id/bow_half_green" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0.7"
+            android:text="BOW"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STERN"
-        android:textSize="17sp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/textView4"
-        android:layout_marginTop="97dp"
-        android:layout_below="@+id/motors_stop"
-        android:layout_alignLeft="@+id/motors_stop"
-        android:layout_alignStart="@+id/motors_stop" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bow_full"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/layout_rounded_buttons"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:textStyle="normal"
+            android:text="FULL" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:background="@drawable/layout_rounded_buttons"
-        android:text="FULL"
-        android:layout_marginLeft="2dp"
-        android:id="@+id/stern_full"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bow_half"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/layout_rounded_buttons"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:textStyle="normal"
+            android:text="HALF" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="HALF"
-        android:layout_marginLeft="2dp"
-        android:background="@drawable/layout_rounded_buttons"
-        android:id="@+id/stern_half"
-        android:layout_alignTop="@+id/stern_full"
-        android:layout_toRightOf="@+id/stern_full"
-        android:layout_toEndOf="@+id/stern_full" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bow_stop"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/layout_rounded_yellow"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:textStyle="normal"
+            android:text="STOP" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="STOP"
-        android:layout_marginLeft="3dp"
-        android:background="@drawable/layout_rounded_yellow"
-        android:hapticFeedbackEnabled="true"
-        android:id="@+id/stern_stop"
-        android:layout_alignTop="@+id/stern_half"
-        android:layout_toRightOf="@+id/stern_half"
-        android:layout_toEndOf="@+id/stern_half" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bow_half_green"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/layout_rounded_green"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:textStyle="normal"
+            android:text="HALF" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bow_full_green"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/layout_rounded_green"
+            android:layout_weight="0.4"
+            android:layout_height="50dp"
+            android:textStyle="normal"
+            android:text="FULL" />
+    </LinearLayout>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="HALF"
-        android:layout_marginLeft="2dp"
-        android:background="@drawable/layout_rounded_green"
-        android:id="@+id/stern_half_green"
-        android:layout_alignTop="@+id/stern_stop"
-        android:layout_toRightOf="@+id/stern_stop"
-        android:layout_toEndOf="@+id/stern_stop" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:text="FULL"
-        android:layout_marginLeft="2dp"
-        android:background="@drawable/layout_rounded_green"
-        android:id="@+id/stern_full_green"
-        android:layout_alignTop="@+id/stern_half_green"
-        android:layout_toRightOf="@+id/stern_half_green"
-        android:layout_toEndOf="@+id/stern_half_green" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/motors_stop"
+                android:layout_width="0dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/layout_rounded_buttons"
+                android:layout_weight="0.4"
+                android:layout_height="50dp"
+                android:textStyle="normal"
+                android:text="STOP" />
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.5"
+                android:text="MOTORS"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimary"/>
 
-</RelativeLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/motors_start"
+                android:layout_width="0dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/layout_rounded_green"
+                android:layout_weight="0.4"
+                android:layout_height="50dp"
+                android:textStyle="normal"
+                android:text="START" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

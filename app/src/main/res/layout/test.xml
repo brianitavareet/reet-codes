@@ -1,162 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.hp.fleetsim.SimulatorThrusterActivity">
+    tools:context="com.example.hp.fleetsim.LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pivot Maritime International"
-        android:id="@+id/textView9"
+        android:id="@+id/textView"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username"
+        android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="125dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simulator"
-        android:id="@+id/textView11"
-        android:layout_below="@+id/textView9"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="200dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Winch\nControl"
-        android:id="@+id/button5"
-        android:textColor="#FF0000"
-        android:layout_below="@+id/textView11"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thruster"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passText"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="250dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Point\nof view\nCamera"
-        android:id="@+id/button7"
-        android:layout_below="@+id/button6"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Speed\n1"
-        android:id="@+id/button8"
-        android:layout_alignTop="@+id/button5"
-        android:layout_toRightOf="@+id/button6"
-        android:layout_toEndOf="@+id/button6"
-        android:layout_marginLeft="62dp"
-        android:layout_marginStart="62dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Speed\n2"
-        android:id="@+id/button9"
-        android:layout_alignBottom="@+id/button6"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Speed\n3"
-        android:id="@+id/button10"
-        android:layout_alignBottom="@+id/button7"
-        android:layout_alignLeft="@+id/button9"
-        android:layout_alignStart="@+id/button9" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Speed\n4"
-        android:id="@+id/button11"
-        android:layout_below="@+id/button7"
-        android:layout_alignLeft="@+id/button10"
-        android:layout_alignStart="@+id/button10"
-        android:layout_marginTop="62dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Emerg\nRelease"
-        android:background="#FF0000"
-        android:id="@+id/button12"
-        android:layout_alignTop="@+id/button8"
-        android:layout_toRightOf="@+id/button8"
-        android:layout_toEndOf="@+id/button8" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Break"
-        android:background="#FF0000"
-        android:id="@+id/button13"
-        android:layout_alignTop="@+id/button12"
-        android:layout_toRightOf="@+id/button12"
-        android:layout_toEndOf="@+id/button12" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AUT"
-        android:id="@+id/button14"
-        android:layout_above="@+id/button11"
-        android:layout_toRightOf="@+id/button13"
-        android:layout_toEndOf="@+id/button13" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Man"
-        android:id="@+id/button15"
-        android:layout_alignTop="@+id/button11"
-        android:layout_alignLeft="@+id/button14"
-        android:layout_alignStart="@+id/button14" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="const\nrpm"
-        android:id="@+id/button16"
-        android:layout_alignBottom="@+id/button14"
-        android:layout_alignLeft="@+id/button17"
-        android:layout_alignStart="@+id/button17" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="const"
-        android:id="@+id/button17"
-        android:layout_below="@+id/button10"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stern\nView"
-        android:id="@+id/button18"
-        android:layout_alignBottom="@+id/button15"
-        android:layout_alignLeft="@+id/button17"
-        android:layout_alignStart="@+id/button17" />
+        android:text="Login"
+        android:id="@+id/loginBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp" />
 </RelativeLayout>

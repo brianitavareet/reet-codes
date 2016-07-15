@@ -17,6 +17,7 @@ public class MaritimeIntro extends BaseAppIntro{
 
     private void loadMainActivity() {
         startActivity(new Intent(this, Login.class));
+        finish();
     }
 
     public void onSkipPressed() {
