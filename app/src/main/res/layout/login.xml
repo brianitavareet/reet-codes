@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ship3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorDivider">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Login to control your ship"/>
+
+        <LinearLayout android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#31383e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+
+                <EditText
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="#31383e"
+                    android:id="@+id/login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#31383e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="#31383e"
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:padding="12dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_margin="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="24dp"
+                    android:textStyle="normal"
+                    android:textSize="25sp"
+                    android:text="Login" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimaryText"
+        android:id="@+id/link_signup"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:text="Sign up" />
+
+    <TextView android:textSize="22dp"
+        android:textColor="@color/colorPrimaryText"
+        android:id="@+id/link_forgotPassword"
+        android:layout_width="0dp"
+        android:background="@color/colorAccent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:text="Need help?" />
+
+</LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
